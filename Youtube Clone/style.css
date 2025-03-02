@@ -8,8 +8,47 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/* Color variables for light theme */
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --light-white-color: #f0f0f0;
+    --light-gray-color: #e5e5e5;
+    --border-color: #d4d4d4;
+    --primary-color: #3b82f6;
+    --secondary-color: #404040;
+    --overlay-dark-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+}
+
+.navbar :where(.nav-section, .search-form, .nav-logo){
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-section{
+    gap: 1rem;
+}
+
 .navbar :where(.logo-image, .user-image){
     width: 32px;
     cursor: pointer;
     border-radius: 50%;
+}
+
+.navbar .nav-logo{
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.navbar .nav-logo .logo-text{
+    font-size: 1.25rem;
+    color: var(--black-color);
 }

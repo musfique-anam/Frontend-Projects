@@ -43,7 +43,7 @@
 }
 
 .navbar .nav-button{
-    border: none;
+    border: none;/*An important professional style*/
     cursor: pointer;
     height: 40px;
     width: 40px;
@@ -101,4 +101,23 @@
     border-radius: 0 3.1rem 3.1rem 0;
     border: 1px solid var(--border-color);
     border-left: 0;
+}
+/* Upper bar css is upwards /header */
+.content-wrapper .category-list{
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;/*pro*/
+    padding: 0.75rem 0 0.75rem;
+    scrollbar-width: none;
+}
+
+.category-list .category-button{
+    border: none;
+    cursor: pointer;/*pro*/
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    background: var(--light-gray-color);
 }

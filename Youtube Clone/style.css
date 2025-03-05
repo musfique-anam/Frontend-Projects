@@ -103,17 +103,27 @@
     border-left: 0;
 }
 /* Upper bar css is upwards /header */
+.main-layout{
+    display: flex;
+}
+
+.main-layout .content-wrapper{
+    padding: 0 1rem;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 .content-wrapper .category-list{
     display: flex;
     gap: 0.75rem;
-    overflow-x: auto;/*pro*/
-    padding: 0.75rem 0 0.75rem;
+    overflow-x: auto;            /*pro*/
+    padding: 0.75rem 0 0.7rem;
     scrollbar-width: none;
 }
 
 .category-list .category-button{
     border: none;
-    cursor: pointer;/*pro*/
+    cursor: pointer;            /*pro*/
     font-size: 0.9rem;
     font-weight: 500;
     white-space: nowrap;

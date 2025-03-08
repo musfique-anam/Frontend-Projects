@@ -35,6 +35,7 @@ header, .category-list{
 
 .navbar{
     display: flex;
+    gap: 2rem;
     align-items: center;
     padding: 0.5rem 1rem;
     justify-content: space-between;
@@ -118,6 +119,7 @@ header, .category-list{
 /* Upper bar css is upwards /header */
 .main-layout{
     display: flex;
+    overflow-y: auto;  /*Upper bar stable*/
 }
 
 .main-layout .content-wrapper{
@@ -143,6 +145,16 @@ header, .category-list{
     padding: 0.4rem 0.75rem;
     border-radius: 0.5rem;
     background: var(--light-gray-color);
+}
+
+.category-list .category-button.active{
+    color: var(--white-color);
+    background: var(--black-color);
+    pointer-events: none;
+}
+
+.category-list .category-button:hover{
+    background: var(--border-color);
 }
 
 .content-wrapper .video-list{

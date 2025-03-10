@@ -122,6 +122,32 @@ header, .category-list{
     overflow-y: auto;  /*Upper bar stable*/
 }
 
+.main-layout .sidebar{
+    width: 280px;
+    background: var(--white-color);
+}
+
+.sidebar .link-section .link-item{
+    display: flex;
+    align-items: center;
+    font-size: 0.938rem;
+    white-space: nowrap;                     /* how works ?*/
+    padding: 0.37rem 0.75rem;
+    margin-bottom: 0.25rem;
+    color: var(--black-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.sidebar .link-section .link-item:hover{
+    background: var(--light-gray-color);
+}
+
+.sidebar .link-section .link-item i{
+    font-size: 1.4rem;
+    margin-right: 0.63rem;
+}
+
 .main-layout .content-wrapper{
     padding: 0 1rem;
     overflow-x: hidden;

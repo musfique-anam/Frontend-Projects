@@ -124,7 +124,20 @@ header, .category-list{
 
 .main-layout .sidebar{
     width: 280px;
+    padding: 0 0.7rem 0;
     background: var(--white-color);
+}
+
+.sidebar .link-container{
+    overflow-y: auto;
+    padding: 1rem 0 2rem;
+    scrollbar-width: thin;
+    height: calc(100vh - 60px);
+    scrollbar-color: transparent transparent;
+}
+
+.sidebar .link-container:hover{
+    scrollbar-color: #a6a6a6 transparent;
 }
 
 .sidebar .link-section .link-item{
@@ -153,6 +166,11 @@ header, .category-list{
     font-weight: 600;
     color: var(--black-color);
     margin: 1rem 0 0.5rem 0.5rem;
+}
+.sidebar .section-separator{
+    height: 1px;
+    margin: 0.625rem 0;
+    background: var(--light-gray-color);
 }
 
 .main-layout .content-wrapper{

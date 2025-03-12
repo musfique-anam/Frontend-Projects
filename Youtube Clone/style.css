@@ -128,6 +128,11 @@ header, .category-list{
     background: var(--white-color);
 }
 
+body.sidebar-hidden .main-layout .sidebar{  /* From JS code */
+    width: 0;
+    padding: 0;
+}
+
 .sidebar .link-container{
     overflow-y: auto;
     padding: 1rem 0 2rem;

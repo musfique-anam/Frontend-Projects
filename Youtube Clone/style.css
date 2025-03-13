@@ -41,22 +41,22 @@ header, .category-list{
     justify-content: space-between;
 }
 
-.navbar :where(.nav-section, .search-form, .nav-logo){
+.container :where(.nav-section, .search-form, .nav-logo){
     display: flex;
     align-items: center;
 }
 
-.navbar .nav-section{
+.container .nav-section{
     gap: 1rem;
 }
 
-.navbar :where(.logo-image, .user-image){
+.container :where(.logo-image, .user-image){
     width: 32px;
     cursor: pointer;
     border-radius: 50%;
 }
 
-.navbar .nav-button{
+.container .nav-button{
     border: none;/*An important professional style*/
     cursor: pointer;
     height: 40px;
@@ -65,24 +65,24 @@ header, .category-list{
     background: none;
 }
 
-.navbar .nav-button:hover{
+.container .nav-button:hover{
     background-color: var(--light-gray-color);
 }
 
-.navbar .nav-button i{
+.container .nav-button i{
     display: flex;
     font-size: 1.5rem;
     align-items: center;
     justify-content: center;
 }
 
-.navbar .nav-logo{
+.container .nav-logo{
     display: flex;
     gap: 0.5rem;
     text-decoration: none;
 }
 
-.navbar .nav-logo .logo-text{
+.container .nav-logo .logo-text{
     font-size: 1.25rem;
     color: var(--black-color);
 }
@@ -131,6 +131,11 @@ header, .category-list{
 body.sidebar-hidden .main-layout .sidebar{  /* From JS code */
     width: 0;
     padding: 0;
+}
+
+.main-layout .sidebar .nav-left{
+    display: none;
+    padding: 0.5rem 0.3rem;
 }
 
 .sidebar .link-container{
@@ -293,5 +298,9 @@ body.sidebar-hidden .main-layout .sidebar{  /* From JS code */
 
     body.sidebar-hidden .main-layout .sidebar{
         left: -280px;
+    }
+
+    .main-layout .sidebar .nav-left{
+        display: flex;
     }
 }
